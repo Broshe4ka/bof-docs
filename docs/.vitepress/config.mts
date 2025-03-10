@@ -7,11 +7,12 @@ export default defineConfig({
     ["link", { rel: "stylesheet", href: "/custom.css" }], // Подключаем CSS
   ],
 
+  ignoreDeadLinks: true,
   themeConfig: {
     logo: "/icons/bof-logo.svg",
 
     // Сюда ссылку на основной сайт
-    logoLink: "http://localhost:3000",
+    logoLink: "https://bof-lending.vercel.app/",
 
     sidebar: [
       {
