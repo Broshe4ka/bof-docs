@@ -1,4 +1,5 @@
 import { defineConfig } from "vitepress";
+import { generateSidebar } from "vitepress-sidebar";
 
 export default defineConfig({
   title: "#BoF Дока ",
@@ -14,19 +15,10 @@ export default defineConfig({
     // Сюда ссылку на основной сайт
     logoLink: "https://bof-lending.vercel.app/",
 
-    sidebar: [
-      {
-        text: "Общая информация",
-        items: [{ text: "О проекте", link: "/" }],
-      },
-      {
-        text: "Для Игроков",
-        items: [{ text: "Внутреигровые механики", link: "/ingame" }],
-      },
-      {
-        text: "Для Юр. Лиц",
-        items: [{ text: "Политика конфендициальности", link: "/legal" }],
-      },
-    ],
+    sidebar: generateSidebar({
+      documentRootPath: "docs",
+      useTitleFromFileHeading: true,
+      excludePattern: [".vitepress"],
+    }),
   },
 });
