@@ -1,5 +1,6 @@
 import { defineConfig } from "vitepress";
 import { generateSidebar } from "vitepress-sidebar";
+import obsidian from "markdown-it-obsidian";
 
 export default defineConfig({
   title: "#BoF Дока ",
@@ -7,6 +8,12 @@ export default defineConfig({
   head: [
     ["link", { rel: "stylesheet", href: "/custom.css" }], // Подключаем CSS
   ],
+
+  markdown: {
+    config: (md) => {
+      md.use(obsidian());
+    },
+  },
 
   ignoreDeadLinks: true,
   themeConfig: {
