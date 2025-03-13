@@ -4,6 +4,11 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+patchedDependencies:
+  markdown-it-obsidian:
+    hash: 020bafffa677d1677d916a17c0f136b649b461ae71bc6150fc7c7ecab5a91d0a
+    path: patches/markdown-it-obsidian.patch
+
 importers:
 
   .:
@@ -14,7 +19,7 @@ importers:
     devDependencies:
       markdown-it-obsidian:
         specifier: ^1.1.0
-        version: 1.1.0
+        version: 1.1.0(patch_hash=020bafffa677d1677d916a17c0f136b649b461ae71bc6150fc7c7ecab5a91d0a)
       vitepress-sidebar:
         specifier: ^1.31.0
         version: 1.31.0
@@ -1622,7 +1627,7 @@ snapshots:
 
   mark.js@8.11.1: {}
 
-  markdown-it-obsidian@1.1.0:
+  markdown-it-obsidian@1.1.0(patch_hash=020bafffa677d1677d916a17c0f136b649b461ae71bc6150fc7c7ecab5a91d0a):
     dependencies:
       extend: 3.0.2
       markdown-it-regexp: 0.4.0

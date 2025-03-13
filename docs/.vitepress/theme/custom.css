@@ -1,5 +1,35 @@
 :root {
-  --vp-sidebar-bg-color: #0e0e0e;
-  --vp-c-bg: #171717;
-  --vp-c-indigo-1: #ff5a00;
+  /* Main bg */
+  --vp-c-bg: #fafafa;
+  /* Sidebar bg */
+  --vp-c-bg-alt: #e5e5e5;
+  /* Popups bg */
+  --vp-c-bg-elv: #ffffff;
+  /* Tables header & mobile popup colors */
+  --vp-c-bg-soft: #cccccc;
+  /* Blocks bg */
+  --vp-c-gray-soft: #cccccc;
+
+  --vp-c-indigo-1: #ff6614;
+  --vp-c-indigo-2: #da4c00;
+  --vp-c-indigo-3: #ff5a00;
+  --vp-c-indigo-soft: #ff5a00bf;
+}
+
+.dark {
+  /* Main bg */
+  --vp-c-bg: #121212;
+  /* Sidebar bg */
+  --vp-c-bg-alt: #0e0e0e;
+  /* Popups bg */
+  --vp-c-bg-elv: #171717;
+  /* Tables header & mobile popup colors */
+  --vp-c-bg-soft: #171717;
+  /* Blocks bg */
+  --vp-c-gray-soft: #0e0e0e;
+
+  --vp-c-indigo-1: #ff9540;
+  --vp-c-indigo-2: #e47322;
+  --vp-c-indigo-3: #ff5a00;
+  --vp-c-indigo-soft: #ff9540bf;
 }

@@ -20,5 +20,10 @@
     "markdown-it-obsidian": "^1.1.0",
     "vitepress-sidebar": "^1.31.0",
     "vue": "^3.5.13"
+  },
+  "pnpm": {
+    "patchedDependencies": {
+      "markdown-it-obsidian": "patches/markdown-it-obsidian.patch"
+    }
   }
 }

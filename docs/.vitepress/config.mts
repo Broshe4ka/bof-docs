@@ -6,7 +6,8 @@ export default defineConfig({
   title: "#BoF Дока ",
   lang: "ru",
   head: [
-    ["link", { rel: "stylesheet", href: "/custom.css" }], // Подключаем CSS
+    ["link", { rel: "stylesheet", href: "/custom.css" }],
+    ["link", { rel: "icon", href: "icons/bof-logo.svg" }],
   ],
 
   markdown: {
@@ -16,11 +17,13 @@ export default defineConfig({
   },
 
   ignoreDeadLinks: true,
+
   themeConfig: {
     logo: "/icons/bof-logo.svg",
 
     // Сюда ссылку на основной сайт
     logoLink: "https://bof-lending.vercel.app/",
+    nav: [{ text: "Главная", link: "/" }],
 
     sidebar: generateSidebar({
       documentRootPath: "docs",
